@@ -3,7 +3,7 @@ var app = express();
 var MongoClient = require('mongodb').MongoClient;
 
 // Assuming your mongo database is named PlanNYU and you have dumped the data from the Dump folder
-var url = "mongodb://localhost:3000/PlanNYU";
+var url = "mongodb://localhost:27017/PlanNYU";
 var PORT = process.env.PORT || 3000;
 
 function sanitizeVal(val) {

@@ -1,0 +1,30 @@
+body {
+	margin: auto;
+	background: white;
+}
+
+h1,h3 {
+	text-align: center;
+	color: purple;
+	font-family: arial; 
+	}
+
+a {
+	display: block;
+	text-align: center;
+}
+
+img {
+	
+	margin-top: 50px;
+	/*margin-left: 10cm;
+	*/
+}
+
+.about_button {
+	text-align: center;
+	/*display: block;
+	margin-left: auto;
+	margin-right: auto;*/
+
+}

@@ -1,14 +1,40 @@
 html, body {
 	min-width: 800px;
 	height: 1000px;
+   padding: 0;
+   margin: 0;
 }
 
 header {
-	background: #9CD4FF;
+	/*background: #E3E3E3;*/
 	text-align: center;
-	font-size: 14px;
+   width: 100%;
+   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   color: rgb(85, 36, 146);
+   position: relative;
+   padding-bottom: 5px;
+   padding-top: 5px;
 }
 
+#anno {
+   margin-bottom: 3px;
+   font-size: 12px;
+   text-align: center;
+   display: block;
+}
+
+.linkToPgs {
+   padding: 3px;
+   position: absolute;
+   top: 12px;
+   background: #8D53AA;
+   font-size: 14px;
+   width: 75px;
+   color: #FFFFFF;
+   border-radius: 3px;
+   display: block;
+   text-decoration: none;
+}
 /*#logs {
 	position: fixed;
 	top: 100px;
@@ -123,6 +149,60 @@ fieldset input:focus + #search-text-results {
    display: none;
 }
 
+#customBlock {
+   text-align: center;
+   border-collapse: collapse;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 8px;
+   box-shadow: 1px 1px 1px #888888;
+}
+
+#customBlock td {
+   border: 1px solid #C5C5C5; 
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
+#customBlockTitle {
+   font-size: 16px;
+   width: 120px;
+}
+
+#dayCheckBox {
+   font-size: 13px;
+   text-align: left;
+}
+
+#dayCheckBox span {
+   margin-left: 5px;
+}
+
+#dayCheckBox input {
+   padding: 0;
+   margin: 0;
+   vertical-align: middle;
+}
+
+#customTime {
+   font-size: 14px;
+}
+
+#customTime input {
+   text-align: center;
+   width: 20px;
+}
+
+#customName {
+   height: 42px;
+}
+
+#customName input {
+   text-align: center;
+   width: 150px;
+   font-size: 13px;
+}
+
 #cart {
 	width: 100%;
 	margin-top: 10px;
@@ -151,7 +231,7 @@ fieldset input:focus + #search-text-results {
 .items {
 	cursor: pointer;
 	float: left;
-	width: 160px;
+	width: 175px;
 	margin-left: 35px;
 	position: relative;
 	border: 1px solid rgba(0, 0, 0, 0.3);
@@ -172,6 +252,7 @@ fieldset input:focus + #search-text-results {
 	padding: 0;
 	margin: 0;
 	list-style-type: none; 
+   max-height: 300px;
 	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 }
 
@@ -228,13 +309,13 @@ fieldset input:focus + #search-text-results {
 	border-radius: 5px;
 	color: white;
 	background: #9c59d0;
-	font-size: 15px;
-	cursor: default;
+	font-size: 14px;
+	cursor: pointer;
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 3px;
-	border: 1px solid rgba(136,52,208,0.5);
 	text-decoration: none;
+   box-shadow: 1px 1px 1px #888888;
 }
 
 .schedule-interact-button:hover a{
@@ -243,13 +324,15 @@ fieldset input:focus + #search-text-results {
 
 #calendar {
 	position: relative;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
    margin-top: 8px;
    z-index: 1;
 }
 
 #class-detail, table {
-	/*float: left;*/
+	/*float: left;
+
+   */
 }
 
 #class-detail {
@@ -316,27 +399,52 @@ td div:hover {
 	background: yellow;
 }
 
+#gScheds {
+   margin-bottom: 40px;
+}
+
 #generate {
-
-
+   margin-bottom: 40px;
 }
 
 #gen-message {
-	font-size: 20px;
-	text-align: center;
+   margin-top: 8px;
+	font-size: 13px;
 	display: block;
+   text-align: center;
 }
 
 .tables-cont {
 	float: left;
 	margin-left: 30px;
-	margin-top: 50px;
+	margin-top: 15px;
+   width: 46%;
 }
 
 .tables-title {
-	text-align: center;
-	display: block;
-	font-size: 18px;
+	font-size: 16px;
+}
+
+.divContGenerate {
+   text-align: center;
+   margin-bottom: 5px;
+}
+
+.hideSched {
+   cursor: pointer;
+   background: #D44949;
+   border: 1px solid #D34949;
+   border-radius: 5px;
+   color: #FFFFFF;
+   padding-left: 4px;
+   padding-right: 4px;
+   padding-bottom: 3px;
+   padding-top: 3px;
+   font-size: 14px;
+}
+
+.hideSched:hover {
+   background: #E05858;
 }
 
 #generate table {
@@ -351,36 +459,46 @@ td div:hover {
 }
 
 #generate td {
-	width: 75px;
-	height: 10px;
+	width: 80px;
+	height: 5px;
 	text-align: center;
 	border: 1px solid black;
-	font-size: 10px;
+	font-size: 12px;
 }
 
-#generate td:first-child {
-	font-size: 16px;
+#noGenerate {
+   margin-top: 15px;
+   text-align: center;
+   font-size: 20px;
+}
+
+.totalClassGen {
+   display: inline-block;
+   margin-top: 3px;
+   font-size: 13px;
 }
 
 /*#imgCalendar {
-   text-align: center;
+   text-a1337lign: center;
 }
 
 #spanImg {
+   nope go back
    font-size: 14px;
    margin-bottom: 3px;
 }
 */
 #spanImgInfo {
-   background: rgb(54,107,198);
+   background: rgb(61, 122, 224);
    padding: 4px;
-   border-radius: 5px;
+   border-radius: 3px;
    color: white;
    font-size: 14px;
    cursor: pointer;
    display: inline-block;
    margin-top: 3px;
    margin-bottom: 3px;
+   box-shadow: 1px 1px 1px #888888;
 }
 
 #spanImgInfo:hover {

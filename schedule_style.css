@@ -2,8 +2,10 @@
 html, body {
     min-width: 800px;
     height: 1000px;
-    padding: 0;
+    padding: 20px;
     margin: 0;
+    /*background: rgba(0, 0, 0, 0.05);*/
+
 }
 
 header {
@@ -15,7 +17,7 @@ header {
     padding-top: 5px;
 
     color: #59008e;
-    margin-top: 10px;
+    /*margin-top: 20px;*/
     /*letter-spacing: 8px;*/
 
 }
@@ -30,21 +32,22 @@ header {
     font-size: 14px;
     width: 90px;
     color: #59008e;
-    border-radius: 3px;
     display: block;
     text-decoration: none;
     margin: 10px;
+    border-radius: 5px;
 }
 
 
 fieldset {
     color: #59008e;
 
-    /*border-radius: 5px;*/
-    height: 60px;
+    height: auto;
     margin:auto;
     width: 90%;
     border: 1px solid rgba(0, 0, 0, 0.3);
+
+
 }
 
 
@@ -75,40 +78,40 @@ fieldset {
 }
 
 
-/*#search-text-results { !* ul *!*/
-    /*width: 304px;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-/*}*/
+#search-text-results { /* ul */
+    width: 304px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/*#search-text-results { !* ul *!*/
-    /*padding: 0;*/
-    /*list-style-type: none;*/
-    /*margin-top: -2px;*/
-    /*border: 1px solid rgba(0, 0, 0, 0.2);*/
-    /*border-radius: 3px;*/
-    /*display: none; !* hide until text search *!*/
-    /*background: #FFFFFF;*/
-    /*overflow: hidden; !* hide li overflow background*!*/
-    /*font-size: 14px;*/
-    /*position: relative;*/
-    /*z-index: 99;*/
-/*}*/
+#search-text-results { /* ul */
+    padding: 0;
+    list-style-type: none;
+    margin-top: -2px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: none; /* hide until text search */
+    background: #FFFFFF;
+    overflow: hidden; /* hide li overflow background*/
+    font-size: 14px;
+    position: relative;
+    z-index: 99;
+}
 
-/*#search-text-results:hover {*/
-    /*display: block;*/
-/*}*/
+#search-text-results:hover {
+    display: block;
+}
 
-/*#search-text-results li {*/
-    /*width: 100%;*/
-    /*padding: 3px;*/
-    /*cursor: pointer;*/
-    /*z-index: 99;*/
-/*}*/
+#search-text-results li {
+    width: 100%;
+    padding: 3px;
+    cursor: pointer;
+    z-index: 99;
+}
 
-/*#search-text-results li:hover {*/
-    /*background: #DEDEDE;*/
-/*}*/
+#search-text-results li:hover {
+    background: #DEDEDE;
+}
 
 
 fieldset input {
@@ -140,7 +143,10 @@ fieldset input:focus + #search-text-results {
 
 #customBlock {
     /*text-align: center;*/
+
     border-collapse: collapse;
+    /*border-radius: 3px;*/
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 8px;
@@ -148,8 +154,9 @@ fieldset input:focus + #search-text-results {
     color: #59008e;
 
     height: 60px;
-    width: 90%;
+    width: 92%;
     border: 1px solid rgba(0, 0, 0, 0.3);
+
 
 
 }
@@ -312,6 +319,10 @@ fieldset input:focus + #search-text-results {
     text-decoration: none;
 
     margin: 10px;
+    margin-right: 20px;
+
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 
@@ -332,24 +343,71 @@ fieldset input:focus + #search-text-results {
     text-decoration: none;
 
     margin: 10px;
+    margin-left: 20px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
 
 }
 
 #currentschedule:hover {
-    background: rgb(68,114,194);
+    background: #a268d0;
 }
 
 
 
 
-#calendar {
-    /*color: #59008e;*/
+
+#calendar{
+
+    color: #59008e;
 
     position: relative;
     margin-bottom: 30px;
     margin-top: 20px;
-    z-index: 1;
+    /*z-index: 1;*/
+
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    /*position: relative;*/
+    z-index: 99; /* block class-detail */
+    background: white;
+
 }
+
+#calendar th {
+    /*border: 1px solid;*/
+    /*color: lightgrey;*/
+    border: 1px solid #ddd;
+    color: #59008e;
+    padding: 8px;
+}
+
+#calendar td {
+    width: 110px;
+    height: 4px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #59008e;
+    font-size: 13px;
+}
+
+#calendar td div {
+    vertical-align: top;
+    cursor: pointer;
+    /*height: 100%;*/
+}
+
+#calendar td div:hover {
+    background: yellow;
+}
+
+
+
+
+
 
 #class-detail, table {
     /*float: left;
@@ -386,38 +444,6 @@ fieldset input:focus + #search-text-results {
     font-size: 14px;
     text-align: center;
     border-bottom: 1px solid black;*/
-}
-
-#calendar table {
-    border: 1px solid black;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    z-index: 99; /* block class-detail */
-    background: white;
-}
-
-th {
-    border: 1px solid black;
-}
-
-#calendar td {
-    width: 110px;
-    height: 6px;
-    text-align: center;
-    border: 1px solid black;
-    font-size: 13px;
-}
-
-td div {
-    vertical-align: top;
-    cursor: pointer;
-    /*height: 100%;*/
-}
-
-td div:hover {
-    background: yellow;
 }
 
 #gScheds {

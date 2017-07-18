@@ -9,7 +9,7 @@
 
 <body>
 <header>
-	<a href="/about" class="linkToPgs" style="right: 1px;">About Us</a>
+	<a href="FrontEnd/about_us.html" class="linkToPgs" style="right: 1px;">About Us</a>
 	<strong style="font-size: 30px;">PlanNYU</strong><br/>
 	<span id="topM" style="font-size: 15px; color: grey;">
          The modern way to schedule classes
@@ -36,9 +36,6 @@
 		<div style="clear : both;"></div>
 	</fieldset>
 </div>
-
-
-<!-- <div style="text-align: center; font-size: 12px;"><a href="#cPrev">Jump to Calendar</a></div>-->
 
 
 <div>
@@ -97,15 +94,16 @@
 
 	<span onclick="getImg(document.getElementById('calendar'))" id="currentschedule">Export current schedule</span>
 	<!--<span style="font-size: 12px;">Export is a pop up</span><br/>-->
-	<span style="font-size: 16px; color: #59008e; ">
+	<span style="font-size: 16px; color: #59008e;">
         <br/><strong>Total Credits: </strong><strong id="numCredits"></strong> <!--| <a href="#top" style="font-size: 12px;">Browse classes</a>-->
         <br/>
     </span>
 </div>
 
 
-<div id="calendar">
-</div>
+<table id="calendar">
+</table>
+
 <!--<div id="imgCalendar"></div>-->
 <div id="generate">
 	<hr style="width: 80%;"/>
@@ -128,7 +126,7 @@
 	<div style="clear : both;"></div>
 </div>
 
-<script src="FrontEnd/index.js"></script>
+<script src="implementation.js"></script>
 <!-- Written by Niklas von Hertzen -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-alpha1/html2canvas.min.js"></script>
 <script>loadSchools();</script>

@@ -1,3 +1,10 @@
+### Note
+
+This is an old directory of PlanNYU without maintenance. Previously PlanNYU is hosted on www.plannyu.com. However, it has been moved to http://plannyu.herokuapp.com/.
+
+
+### Original README
+
 www.plannyu.com (not affiliated with NYU)    
 An application that provides students with a convenient way to create their class schedules. 
 We are slowly moving towards open source! Since this is supposed to help the community, they should have the right to contribute.  

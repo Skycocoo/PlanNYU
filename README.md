@@ -1,7 +1,8 @@
-### Note
+# Note
 
 This is an old directory of PlanNYU without maintenance. Previously PlanNYU is hosted on www.plannyu.com. However, it has been moved to http://plannyu.herokuapp.com/.
 
+---
 
 ### Original README
 
